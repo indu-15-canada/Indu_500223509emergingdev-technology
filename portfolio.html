@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #edf2f7;
+            color: #2d3748;
+        }
+
+        header {
+            background-color: #2b6cb0;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4a5568;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #020507;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .about, .projects, .contact {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .projects-item {
+            background-color: #97c5a9;
+            color: #272f41;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(22, 11, 11, 0.15);
+        }
+
+        footer {
+            background-color: #2b6cb0;
+            color: #e0bdbd;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            text-align: left;
+            line-height: 1.8;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Indu</h1>
+        <p>Computer Software Database Development | Loyalist College, Toronto</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            
+            
+            <div>
+                <p>
+                    Hi, I am Indu, a student at Loyalist College, Toronto, currently pursuing a course in Computer Software Database Development. I am passionate about technology and aim to build efficient, user-friendly applications that solve real-world problems.
+                </p>
+                <p>Address: 79 Alicewood Ct, Etobicoke</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2>projects</h2>
+        <div class="projects-grid">
+            <div class="projects-item">Project 1: E-commerce Website
+                <p>1.Designed a user-friendly, responsive layout to ensure seamless shopping experiences across all devices.</p>
+                    <p>2.Focused on clean navigation and intuitive UI to highlight products and simplify the purchasing process.</p>
+                    <p>3.Integrated modern design trends with branding elements to enhance the website's visual appeal and user engagement.</p>
+            </div>
+            <div class="projects-item">Project 2: Student Management System
+                <p>1.Created an intuitive and responsive interface for managing student data, ensuring accessibility across devices.</p>
+                <p>2.Designed dashboards and navigation layouts to simplify data entry, tracking, and reporting for users.</p>
+                <p>3.Incorporated visual elements and typography to enhance usability while maintaining a professional and clean design.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            
+            <p>Email: indunov20@gmail.com</p>
+            <p>Instagram: @indu_in_tech</p>
+            <p>Phone: +1 647 123 4567</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Indu. All Rights Reserved.</p>
+        <div class="contact-info">
+            <p>Email:indunov20@gmail.com</p>
+            <p>Instagram: @indu_in_tech</p>
+            <p>Address: 79 Alicewood Ct, Etobicoke</p>
+        </div>
+    </footer>
+</body>
+</html>
