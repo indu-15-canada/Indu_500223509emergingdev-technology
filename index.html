@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox and Grid Demonstration</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fefefe;
+            color: #444;
+        }
+
+        h2 {
+            color: #ff5722;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .flex-demo, .grid-demo {
+            margin: 20px;
+            padding: 25px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            border: 1px solid #ddd;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 20px;
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .flex-item {
+            background-color: #756956;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 16px;
+            border: 1px solid #a18d78;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            background-color: #f3e5f5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .grid-item {
+            background-color: #673ab7;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 14px;
+            border: 1px solid #5e35b1;
+        }
+    </style>
+</head>
+<body>
+    <section class="flex-demo">
+        <h2>Flexbox Demonstration (Improved Vertical Layout)</h2>
+        <div class="flex-container">
+            <div class="flex-item">Flex Item 1: Stretch</div>
+            <div class="flex-item">Flex Item 2: Gap Adjusted</div>
+            <div class="flex-item">Flex Item 3: Space Managed</div>
+        </div>
+    </section>
+
+    <section class="grid-demo">
+        <h2>Grid Demonstration (Improved Layout)</h2>
+        <div class="grid-container">
+            <div class="grid-item">Grid 1</div>
+            <div class="grid-item">Grid 2</div>
+            <div class="grid-item">Grid 3</div>
+            <div class="grid-item">Grid 4</div>
+            <div class="grid-item">Grid 5</div>
+            <div class="grid-item">Grid 6</div>
+        </div>
+    </section>
+</body>
+</html>
